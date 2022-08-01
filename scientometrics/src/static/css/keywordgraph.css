@@ -1,0 +1,67 @@
+
+
+
+.node {
+	stroke: #000;
+	stroke-width: 1px;
+}
+
+.link {
+	stroke: #ddd;
+	stroke-opacity: 0.5;
+	stroke-width: 2px;
+}
+
+.keyword-node-title {
+	background-color: rgba(44, 34, 42, 0.8);
+	padding: 0.2em 0.6em;
+	border-radius: 0.4em;
+	color: white;
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+.ks-controls {
+	
+}
+
+#kg-paper-title {
+	color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+#kg-authors {
+	margin-top: 1em;
+	color: cornflowerblue;
+}
+
+#kg-authors>*:after {
+	content: ",  ";
+	margin-right: 0.5em;
+}
+
+#kg-authors>*:last-child:after {
+	content: "";
+}
+
+.keywordyear {
+	width:80px;
+	padding:5px 10px;
+	border-radius:3px;
+	background-color:#669999;
+	margin-left:2px;
+	color:#fff;
+	float:left;
+	cursor:pointer;
+}
+.keywordyear:hover {
+	background-color:#336666;
+	color:#fff;
+}
+.active {
+	background-color:#fff;
+	color:#666;
+}

@@ -1,0 +1,106 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title #{title}
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width')
+  link(href='//fonts.googleapis.com/css?family=Ubuntu', rel='stylesheet', type='text/css')
+  link(rel='stylesheet', href='/css/jquery-ui.min.css')
+  link(rel='stylesheet', href='/css/jquery-ui.structure.min.css')
+  link(rel='stylesheet', href='/css/jquery-ui.theme.min.css')
+  link(rel='stylesheet', href='/css/leaflet-1.6.0.css')
+  link(rel='stylesheet', href='/css/main.css')
+  link(rel='stylesheet', href='/css/collaboration-country.css')
+  link(rel='stylesheet', href='/css/markercluster.css')
+  link(rel='stylesheet', href='/css/markercluster-default.css')
+  link(rel='stylesheet', href='/css/keywordgraph.css')
+  style.
+    #project-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    }
+    #project-icon {
+    float: left;
+    height: 32px;
+    width: 32px;
+    }
+    #project-description {
+    margin: 0;
+    padding: 0;
+    }
+  // endbuild
+//if lt IE 10
+  p.browsehappy
+    | You are using an 
+    strong outdated
+    |  browser. Please 
+    a(href='http://browsehappy.com/') upgrade your browser
+    |  to improve your experience.
+body(data-endpoint=endpoint, data-scope=scope, data-scope-type=scope_type)
+  .container
+    .header
+      //- a(href='https://github.com/stko-lab', target='_blank')
+      //-   img.logos(src='/img/stko_logo.png')
+      //- a(href='https://www.iospress.com', target='_blank')
+      //-   img.logos(src='/img/ios_logo.png')
+
+      ul#modules.nav.nav-pills.pull-right
+        #streamgraph.navbutton(onclick='module_streamgraph();') Streamgraph
+        #keywordgraph.navbutton(onclick='loadKeywordGraph();') Keyword Graph
+        #simpap.navbutton(onclick='module_paper_similarity();') Paper Similarity
+        #simauthor.navbutton(onclick='module_author_similarity();') Author Similarity
+        #authormap.navbutton(onclick='module_author_map();') Author Map
+        #countrycollab.navbutton(onclick='CountryCollab();') Country Collaboration 
+        #home.navbutton(onclick='HomeLoadApp();') Home
+      // <h3 class="text-muted">IOS Press - Drisi</h3>
+      a(href='https://github.com/stko-lab', target='_blank')
+        img(style='height:30px', src='/img/stko_logo.png')
+      a(href='http://ld.iospress.nl', target='_blank')
+        img(style='height:35px;width:180px', src='/img/logo-ldconnect.jpg')
+      br
+      br
+    .jumbotron
+      #app
+        .module-info(style="text-align:left;width:100%;color:#fff")
+          p #{abstract}
+        #map-container(style='position:relative;width:100%;text-align:center;height:500px;')
+          svg#cartomap(style='background-color:#000;width:100%;height:100%;margin:0;')
+      br
+      br 
+      .form-group
+      label.control-label.requiredField(for='category',style="font-size:14px;font-weight:bold;color:#fff")
+        | Journal Category: 
+        select#category.select.form-control.input-lg(form='addProperty', name='CategoryName')
+          option(value='undefined') - Select Category -  
+      .form-group
+      label.control-label.requiredField(for='journal',style="font-size:14px;font-weight:bold;color:#fff")
+        | Journal Name: 
+        select#journal.select.form-control.input-lg(form='addProperty', name='JournalName')
+          option(value='undefined') - Select Journal -
+    .row
+      .col-lg-6
+    .footer
+  script(src='/lib/jquery-3.6.0.min.js')
+  script(src='/lib/jquery-ui-1.12.1.min.js')
+  script(src='/lib/underscore-min.js')
+  script(src='/lib/d3-7.0.0.min.js')
+  script(src='/lib/leaflet-1.6.0.min.js')
+  script(src='/lib/stamen-1.3.0.js')
+  script(src='/lib/leaflet.markercluster-1.4.1.js')
+  script(src='/lib/d3-tip.js')
+  script(src='/lib/topojson.js')
+  
+  script(src='/js/import.js')
+  script(src='/js/dd.js')
+  script(src='/js/query.js')
+  script(src='/js/wkt.js')
+  script(src='/js/init.js')
+
+  script(src='/js/mod-author-map.js')
+  script(src='/js/mod-paper-similarity.js')
+  script(src='/js/mod-author-similarity.js')
+  script(src='/js/mod-streamgraph.js')
+  script(src='/js/mod-home.js')
+  script(src='/js/mod-keywordsgraph.js')
+  script(src='/js/mod-country-collaboration.js')

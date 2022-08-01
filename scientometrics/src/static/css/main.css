@@ -1,0 +1,185 @@
+
+#simpaper_searchbutton {
+  width:150px;
+  cursor:pointer;
+  padding:7px 9px;
+  margin-left:5px;
+  font-size:1.0em;
+  text-align:center;
+  font-family:'Ubuntu', sans-serif;
+  border-radius:3px;
+  background-color:#669999;
+  float:left;
+  color:#fff;
+}
+#simpaper_searchbutton:hover {
+  background-color:#ffffff;
+  color:#666;
+}
+
+#simauthor_searchbutton {
+  width:150px;
+  cursor:pointer;
+  padding:7px 9px;
+  margin-left:5px;
+  font-size:1.0em;
+  text-align:center;
+  font-family:'Ubuntu', sans-serif;
+  border-radius:3px;
+  background-color:#669999;
+  float:left;
+  color:#fff;
+}
+
+#simauthor_searchbutton:hover {
+  background-color:#ffffff;
+  color:#666;
+}
+
+.navbutton {
+  float:right;
+  background-color:#669999;
+  border-radius:3px;
+  padding:10px 10px;
+  color:#fff;
+  margin:5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.navbutton:hover {
+  background-color:#ffffff;
+  color: #666;
+}
+
+#am_loading {
+  position:absolute;
+  margin-left:50%;
+  left:-512px;
+  top:80px;
+  background-color:#000;
+  width:1024px;
+  height:600px;
+  z-index:1000;
+  padding-top:200px;
+  opacity: 0.9;
+}
+
+.module-info {
+  width: 85%;
+  color: rgba(240,240,255,0.9);
+  margin-bottom: 1em;
+  white-space: pre-line;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #111;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* correct container width */
+.container {
+  width: 1024px;
+  position:absolute;
+  margin-left:50%;
+  left:-512px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 11pt;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header {
+  border-bottom:solid 3px #666;
+}
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logos {
+  float:right;
+  margin-left:10px;
+  height:23px;
+  padding-top:13px;
+}
+
+/* Custom page header */
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 0px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color:#000;
+  padding-top: 20px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  /* Remove the padding we set earlier */
+
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

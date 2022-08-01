@@ -1,0 +1,10 @@
+{
+	"abstract": "",
+	"conf": "",
+	"scope": "",
+	"scope_type": "http://ld.iospress.nl/rdf/ontology/Journal",
+	"endpoint": "http://ld.iospress.nl/sparql",
+	"slug": "iospress_scientometrics",
+	"title": "IOS Press scientometrics",
+	"mod_map": 1
+}
